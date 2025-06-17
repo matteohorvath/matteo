@@ -16,7 +16,6 @@ const NavBar = () => {
       name: "Projects",
       to: "/projects",
       show: true,
-      external: true,
     },
     { id: 3, name: locale.NAV.SEARCH, to: "/search", show: true },
   ];
