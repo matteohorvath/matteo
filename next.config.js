@@ -18,16 +18,11 @@ module.exports = {
       }
     ]
   },
-  transpilePackages: ['dayjs']
-  // webpack: (config, { dev, isServer }) => {
-  //   // Replace React with Preact only in client production build
-  //   if (!dev && !isServer) {
-  //     Object.assign(config.resolve.alias, {
-  //       react: 'preact/compat',
-  //       'react-dom/test-utils': 'preact/test-utils',
-  //       'react-dom': 'preact/compat'
-  //     })
-  //   }
-  //   return config
-  // }
+  transpilePackages: ['dayjs'],
+  webpack: (config) => {
+    // pdfjs-dist (via react-notion-x PDF embeds) optional-requires the native
+    // `canvas` package. It has no Node 22 prebuild, so we stub it out.
+    config.resolve.alias.canvas = false
+    return config
+  }
 }
