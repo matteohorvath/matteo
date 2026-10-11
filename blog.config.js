@@ -1,12 +1,12 @@
 const BLOG = {
-  title: "Matteo's blog",
+  title: "Matteo Horvath",
   author: "Matteo",
   email: "horvathandrasmate@gmail.com",
-  link: "https://matteo.contact",
+  link: "https://matteohorvath.com",
   description:
-    "Interviews, math, philosophy. also business. Come, check it out.",
+    "Building mesh.applied — efficient local LLM inference. Previously built mesh. in Budapest.",
   lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
-  timezone: "Europe/Budapest", // Your Notion posts' date will be interpreted as this timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
+  timezone: "America/Los_Angeles", // Your Notion posts' date will be interpreted as this timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: "auto", // ['light', 'dark', 'auto'],
   font: "sans-serif", // ['sans-serif', 'serif']
   lightBackground: "#ffffff", // use hex value, don't forget '#' e.g #fffefc
@@ -20,6 +20,8 @@ const BLOG = {
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
   ogImageGenerateURL: "https://og-image-craigary.vercel.app", // The link to generate OG image, don't end with a slash
   socialLink: "https://x.com/buildingmatteo",
+  githubLink: "https://github.com/matteohorvath",
+  linkedinLink: "https://www.linkedin.com/in/matteo-horvath-02273b115/",
   seo: {
     keywords: ["Blog", "Website", "Notion"],
     googleSiteVerification: "", // Remove the value or replace it with your own google site verification code
